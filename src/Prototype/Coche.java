@@ -2,47 +2,67 @@ package Prototype;
 
 public abstract class Coche {
 	
-	protected String marca;
-	protected String color;
-	protected String modelo;
+	protected String carroceria;
+	protected String motor;
+	protected String ruedas;
+	protected String aceite;
 	
-	public Coche(String marca, String color,String modelo) {
-		this.setMarca(marca);
-		this.setColor(color);
-		this.setModelo(modelo);
+	public Coche(String carroceria, String motor,String ruedas,String aceite) {
+		this.setCarroceria(carroceria);
+		this.setMotor(motor);
+		this.setRuedas(ruedas);
+		this.setAceite(aceite);
 		
 	}
-	
+
+		
 	@Override
 	public String toString() {
-		return "Coche [marca=" + marca + ", color=" + color + ", modelo=" + modelo + "]";
+		return "Coche [carroceria=" + carroceria + ", motor=" + motor + ", ruedas=" + ruedas + ", aceite=" + aceite
+				+ "]";
 	}
 
-	public String getMarca() {
-		return marca;
+
+	public String getCarroceria() {
+		return carroceria;
 	}
 
-	public void setMarca(String marca) {
-		this.marca = marca;
+
+	public void setCarroceria(String carroceria) {
+		this.carroceria = carroceria;
 	}
 
-	public String getColor() {
-		return color;
+
+	public String getMotor() {
+		return motor;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+
+	public void setMotor(String motor) {
+		this.motor = motor;
 	}
 
-	public String getModelo() {
-		return modelo;
+
+	public String getRuedas() {
+		return ruedas;
 	}
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
+
+	public void setRuedas(String ruedas) {
+		this.ruedas = ruedas;
 	}
 
-		
+
+	public String getAceite() {
+		return aceite;
+	}
+
+
+	public void setAceite(String aceite) {
+		this.aceite = aceite;
+	}
+
+
 	public abstract Coche clone();
 
 }
