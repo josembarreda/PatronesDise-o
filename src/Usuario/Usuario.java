@@ -6,6 +6,14 @@ public class Usuario {
 		private String direccion;
 		private int telefono;
 		private String gmail;
+		
+		public Usuario(String nombre, String direccion,int telefono,String gmail) {
+			this.setNombre(nombre);
+			this.setDireccion(direccion);
+			this.setTelefono(telefono);
+			this.setGmail(gmail);
+			
+		}
 
 
 		public String getNombre() {
@@ -40,4 +48,12 @@ public class Usuario {
 		public void setGmail(String gmail) {
 			this.gmail = gmail;
 		}
+
+
+		@Override
+		public String toString() {
+			return "Usuario [nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + ", gmail="
+					+ gmail + "]";
+		}
+		
 	}
